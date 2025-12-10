@@ -1,0 +1,27 @@
+body {
+    background: #111;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: #ff99cc;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 18px;
+    background: #ff66aa;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ff3385;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>❤️Merhaba Sevgilim❤️</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #111;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .box {
+            width: 90%;
+            max-width: 600px;
+            border: 2px solid #ff4d6d;
+            padding: 25px;
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.07);
+            backdrop-filter: blur(8px);
+        }
+        h1 {
+            color: #ff4d6d;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.9;
+            margin-bottom: 25px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #ff4d6d;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 10px;
+        }
+        .btn:hover {
+            background: #ff3355;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>❤️Merhaba Sevgilim❤️</h1>
+        <p>
+            Seni tanıdığm günden beri hayatım çok güzelleşti...<br><br>
+            Her geçen salisede bile seni düşünüyorum, varlığını bilmek bile huzur veriyor...<br><br>
+            Sen mutlu ol diye elimden geleni her zaman yaparım, yeter ki sen her zaman sağlıklı ve mutlu ol...<br><br>
+            Hazırsan, seni düşündüğüm o yere geçelim...💖
+        </p>
+        <a href="index.html" class="btn">💖Görmek İçin Tıkla💖</a>
+    </div>
+    <audio id="bg-music" src="music/sarilaleler.mp3.mp3" autoplay muted loop></audio>
+<script>
+setTimeout(() => {
+    const music = document.getElementById("bg-music");
+    music.muted = false;
+    music.play();
+}, 800);
+</script>
+</body>
+</html>

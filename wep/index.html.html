@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Muhammed 🤍 Beyza - Sonsuzluk İçeren Hikayemiz</title>
+<meta name="viewport" concet="width=device-w,dth, ,initial-scale=1">
+<style>
+body {
+    margin: 0;
+    background: #000;
+    overflow-x: hidden;
+    font-family: 'Times New Roman', serif;
+    color: white;
+}
+/* Arka plan gold partikül efekti*/
+@keyframes dust {
+    0% {opacity: 0.3; transform: translateY(0);}
+    100% {opacity: 0; transform: translateY(-2000px);}
+}
+.particles {
+    position: fixed;
+    width: 2px;
+    background: gold;
+    box-shadow: 0 0 4px gold;
+    animation: dust 12s linear infinite;
+}
+/* Başlık */
+.header {
+    text-align: center;
+    padding: 80px 20px;
+    font-size: 55px;
+    font-weight: bold;
+    color: gold;
+    text-shadow: 0 0 15px gold;
+}
+/* Sinematik yazı */
+.subtitle {
+    text-align: center;
+    font-size: 22px;
+    color: #ffd;
+    opacity: 0.8;
+    margin-top: -10px;
+    margin-bottom: 50px;
+}
+/* Galeri */
+.gallery {
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+    padding: 20px;
+    scroll-behavior: smooth;
+}
+.gallery img{
+    height: 450px;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.4);
+    transition: 0.4s;
+}
+.gallery img:hover {
+    transform: scale(1.06);
+    box-shadow: 0 0 40px gold;
+}
+/* Alt Yazılar */
+.caption {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 5px;
+    color: gold;
+    opacity: 0.75;
+}
+/* Müzik */
+audio {
+    display: none;
+}
+</style>
+</head>
+<body>
+<!-- Gold Parçacıklar -->
+ <script>
+for(let i=0; i<120; i++){
+    let p = document.createElement("div");
+    p.className = "particles";
+    p.style.left = Math.random() * window.innerWidth + "px";
+    p.style.top = (Math.random() * window.innerHeight + 200) + "px";
+    p.style.animationDuration = (6 + Math.random()*10) + "s";
+    p.style.opacity = Math.random();
+    document.body.appendChild(p);
+} 
+</script>
+<!-- Başlık -->
+ <div class="header">Muhammed 🤍 Beyza</div>
+ <div class="subtitle">"Bu, iki kalbin aynı ritimde attığı hikayenin sayfasıdır."</div>
+ <!-- Müzik -->
+  <audio autoplay loop>
+    
+  </audio>
+  <!-- Galeri -->
+<div class="gallery">
+    <div>
+        <img src="images/IMG_0787.jpg">
+        <div class="caption">"Senin mutluğu olduğunu görmek benim en büyük servetimdir."</div>
+    </div>
+    <div>
+        <img src="images/IMG_0922.JPG">
+        <div class="caption">"Gördüğüm en güzel çiçek sendin ve hep öyle de olacak."</div>
+    </div>
+</div>
+<audio id="bg-music" src="music/dilerimki.mp3.mp3" autoplay muted loop></audio>
+<script>
+    const music = document.getElementById("music2");
+    music.play(); 
+</script>
+</body>
+</html>
